@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Star from './star.svg?.tsx'
 
 const STATUS = {
   HOVERED: 'hovered',
@@ -23,6 +24,7 @@ function Link({ page, children }: any) {
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
+      <Star />
       {children}
     </a>
   )
